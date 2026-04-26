@@ -1,6 +1,8 @@
 # 🌌 Lumina Gallery | Modern Responsive Image Gallery
 
-![Lumina Gallery Banner](https://img.shields.io/badge/Status-Complete-success?style=for-the-badge)
+![Lumina Gallery Preview](assets/gallery-preview.png)
+
+![Status](https://img.shields.io/badge/Status-Complete-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 ![Framework](https://img.shields.io/badge/Built%20With-Vanilla%20JS-yellow?style=for-the-badge)
 
