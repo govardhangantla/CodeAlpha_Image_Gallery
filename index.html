@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Modern Image Gallery</title>
+    <!-- Meta for SEO -->
+    <meta name="description"
+        content="A premium, responsive image gallery with smooth transitions and lightbox navigation.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 id="gallery-title">Lumina <span class="accent">Gallery</span></h1>
+            <p class="subtitle">Exploring the beauty of Nature, Animals, and Technology</p>
+
+            <nav class="filters" aria-label="Image category filters">
+                <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+                <button class="filter-btn" data-filter="nature" id="filter-nature">Nature</button>
+                <button class="filter-btn" data-filter="animals" id="filter-animals">Animals</button>
+                <button class="filter-btn" data-filter="tech" id="filter-tech">Tech</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="gallery-grid" id="gallery-grid">
+            <!-- Nature -->
+            <div class="gallery-item nature" data-category="nature">
+                <img src="assets/nature_forest_1775591315464.png" alt="Lush green forest" loading="lazy">
+                <div class="overlay"><span>Nature</span></div>
+            </div>
+            <div class="gallery-item nature" data-category="nature">
+                <img src="assets/nature_mountain_1775591332304.png" alt="Snowy mountain peaks" loading="lazy">
+                <div class="overlay"><span>Nature</span></div>
+            </div>
+            <div class="gallery-item nature" data-category="nature">
+                <img src="assets/nature_ocean_1775591349799.png" alt="Turquoise ocean waves" loading="lazy">
+                <div class="overlay"><span>Nature</span></div>
+            </div>
+            <div class="gallery-item nature" data-category="nature">
+                <img src="assets/nature_desert_1775591368056.png" alt="Golden sand dunes" loading="lazy">
+                <div class="overlay"><span>Nature</span></div>
+            </div>
+            <!-- Animals -->
+            <div class="gallery-item animals" data-category="animals">
+                <img src="assets/animal_tiger_1775591385450.png" alt="Majestic tiger portrait" loading="lazy">
+                <div class="overlay"><span>Animals</span></div>
+            </div>
+            <div class="gallery-item animals" data-category="animals">
+                <img src="assets/animal_elephant_1775591401871.png" alt="Elephant family at sunset" loading="lazy">
+                <div class="overlay"><span>Animals</span></div>
+            </div>
+            <div class="gallery-item animals" data-category="animals">
+                <img src="assets/animal_owl_1775591421057.png" alt="Mysterious owl at night" loading="lazy">
+                <div class="overlay"><span>Animals</span></div>
+            </div>
+            <div class="gallery-item animals" data-category="animals">
+                <img src="assets/animal_dolphin_1775591436435.png" alt="Dolphins jumping" loading="lazy">
+                <div class="overlay"><span>Animals</span></div>
+            </div>
+            <!-- Tech -->
+            <div class="gallery-item tech" data-category="tech">
+                <img src="assets/tech_setup_1_1775591455603.png" alt="Modern gaming setup" loading="lazy">
+                <div class="overlay"><span>Tech</span></div>
+            </div>
+            <div class="gallery-item tech" data-category="tech">
+                <img src="assets/tech_circuit_board_1775591474739.png" alt="Glowing circuit board" loading="lazy">
+                <div class="overlay"><span>Tech</span></div>
+            </div>
+            <div class="gallery-item tech" data-category="tech">
+                <img src="assets/tech_robot_arm_assembling_1775591494970.png" alt="Robotic arm assembly" loading="lazy">
+                <div class="overlay"><span>Tech</span></div>
+            </div>
+            <div class="gallery-item tech" data-category="tech">
+                <img src="assets/tech_abstract_data_visualization_1775591513615.png" alt="Abstract data visualization"
+                    loading="lazy">
+                <div class="overlay"><span>Tech</span></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Lumina Gallery. Exploring the intersection of Nature & Tech.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Behance</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+        <button class="close-btn" id="close-btn" aria-label="Close Lightbox">&times;</button>
+        <button class="nav-btn prev" id="prev-btn" aria-label="Previous image">&#10094;</button>
+        <button class="nav-btn next" id="next-btn" aria-label="Next image">&#10095;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Selected image">
+            <div class="lightbox-info">
+                <p id="lightbox-caption"></p>
+                <a id="download-btn" href="#" download class="download-btn-link">Download Image</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
